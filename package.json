@@ -1,0 +1,6 @@
+{
+    "name": "signal-desktop-docker-vnc",
+    "scripts": {
+       "build-docker": "docker buildx build --platform linux/amd64 -t louislam/signal-desktop-docker-vnc -t louislam/signal-desktop-docker-vnc:5.17.2 . --push --progress plain"
+    }
+}
