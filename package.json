@@ -1,6 +1,8 @@
 {
     "name": "signal-desktop-docker-vnc",
     "scripts": {
-       "build-docker": "docker buildx build --platform linux/amd64 -t louislam/signal-desktop-docker-vnc -t louislam/signal-desktop-docker-vnc:5.17.2 . --push --progress plain"
+        "buildx": "docker buildx build --platform linux/amd64 -t louislam/signal-desktop-docker-vnc -t louislam/signal-desktop-docker-vnc:5.17.2 . --push --progress plain",
+        "build": "docker build -t louislam/signal-desktop-docker-vnc -t louislam/signal-desktop-docker-vnc:5.17.2 .",
+        "push": "docker push louislam/signal-desktop-docker-vnc && docker push louislam/signal-desktop-docker-vnc:5.17.2 "
     }
 }

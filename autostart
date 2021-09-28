@@ -1,0 +1,1 @@
+/opt/Signal/signal-desktop --enable-dev-tools --no-sandbox &
